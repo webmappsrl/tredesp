@@ -34,5 +34,14 @@
                 @endforeach
             @endif
 
+            <h3>Cosa farò oggi? (Progress)</h3>
+            @if(empty($activity_today_almost_there[$mid]))
+                <p>Nessuna attività in PROGRESS</p>
+            @else
+                @foreach($activity_today_progress[$mid] as $card)
+                    <p>{{$card->name}} SCORE: {{$card->score}}</p>
+                @endforeach
+            @endif
+
         @endforeach
 @endsection

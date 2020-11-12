@@ -58,6 +58,7 @@ class DashboardController extends Controller
         $activity_today=[];
         $activity_today_almost_there=[];
         $activity_today_rejected=[];
+        $activity_today_progress=[];
         foreach(Member::all() as $m) {
             if (count($m->cards)>0) {
                 $data['members'][$m->id]=$m->full_name;
@@ -83,11 +84,20 @@ class DashboardController extends Controller
                         $activity_today_almost_there[$m->id][]=$card;
                     }
                 }
+
+                // Activity today / progress
+                $activity_today_progress[$m->id]=[];
+                if($m->cards->where('list','PROGRESS')->count()>0) {
+                    foreach($m->cards->where('list','PROGRESS') as $card) {
+                        $activity_today_progress[$m->id][]=$card;
+                    }
+                }
             }
         }
         $data['activity_today'] = $activity_today;
         $data['activity_today_rejected'] = $activity_today_rejected;
         $data['activity_today_almost_there'] = $activity_today_almost_there;
+        $data['activity_today_progress'] = $activity_today_progress;
         return view('daily',$data);
     }
 
