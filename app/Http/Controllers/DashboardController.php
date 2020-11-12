@@ -51,4 +51,45 @@ class DashboardController extends Controller
 
         return view('dashboard',$data);
     }
+    public function daily() {
+        $data = array();
+        $data['last_update']=Card::max('updated_at');
+        $activity_yesterday=[];
+        $activity_today=[];
+        $activity_today_almost_there=[];
+        $activity_today_rejected=[];
+        foreach(Member::all() as $m) {
+            if (count($m->cards)>0) {
+                $data['members'][$m->id]=$m->full_name;
+                // Activity yesterday
+                // Activity today
+                $activity_today[$m->id]=[];
+                if($m->cards->where('list','TODAY')->count()>0) {
+                    foreach($m->cards->where('list','TODAY') as $card) {
+                        $activity_today[$m->id][]=$card;
+                    }
+                }
+                // Activity today / rejected
+                $activity_today_rejected[$m->id]=[];
+                if($m->cards->where('list','REJECTED')->count()>0) {
+                    foreach($m->cards->where('list','REJECTED') as $card) {
+                        $activity_today_rejected[$m->id][]=$card;
+                    }
+                }
+                // Activity today / almost there
+                $activity_today_almost_there[$m->id]=[];
+                if($m->cards->where('list','ALMOST THERE')->count()>0) {
+                    foreach($m->cards->where('list','ALMOST THERE') as $card) {
+                        $activity_today_almost_there[$m->id][]=$card;
+                    }
+                }
+            }
+        }
+        $data['activity_today'] = $activity_today;
+        $data['activity_today_rejected'] = $activity_today_rejected;
+        $data['activity_today_almost_there'] = $activity_today_almost_there;
+        return view('daily',$data);
+    }
+
+
 }

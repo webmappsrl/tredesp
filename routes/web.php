@@ -17,3 +17,5 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 Route::get('/', [DashboardController::class,'index']);
+
+Route::get('/daily', [DashboardController::class,'daily']);

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39cb0c76-78c2-452e-b513-94ddea2e79d4" name="Default Changelist" comment="" />
+    <list default="true" id="39cb0c76-78c2-452e-b513-94ddea2e79d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/daily.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +17,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpStormWorkshopConfiguration">
     <option name="enabled" value="true" />
@@ -129,6 +139,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1jHk2wchQ5KoeMdNAZLDRe1vfqL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -161,7 +172,10 @@
       <updated>1603468200967</updated>
       <workItem from="1603468203636" duration="1157000" />
       <workItem from="1603469799867" duration="11783000" />
-      <workItem from="1603546847173" duration="12212000" />
+      <workItem from="1603546847173" duration="12539000" />
+      <workItem from="1604648339659" duration="326000" />
+      <workItem from="1604990175799" duration="599000" />
+      <workItem from="1605079309585" duration="5321000" />
     </task>
     <servers />
   </component>
@@ -173,5 +187,25 @@
       <screen x="1280" y="-77" width="1920" height="1057" />
     </state>
     <state x="1977" y="213" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1280.777/1280.-77.1920.1057@1280.-77.1920.1057" timestamp="1603522646802" />
+    <state width="1878" height="281" key="GridCell.Tab.0.bottom" timestamp="1605080202657">
+      <screen x="1280" y="-77" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="281" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.-77.1920.1057@1280.-77.1920.1057" timestamp="1605080202657" />
+    <state width="1878" height="281" key="GridCell.Tab.0.center" timestamp="1605080202656">
+      <screen x="1280" y="-77" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="281" key="GridCell.Tab.0.center/0.23.1280.777/1280.-77.1920.1057@1280.-77.1920.1057" timestamp="1605080202656" />
+    <state width="1878" height="281" key="GridCell.Tab.0.left" timestamp="1605080202656">
+      <screen x="1280" y="-77" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="281" key="GridCell.Tab.0.left/0.23.1280.777/1280.-77.1920.1057@1280.-77.1920.1057" timestamp="1605080202656" />
+    <state width="1878" height="281" key="GridCell.Tab.0.right" timestamp="1605080202657">
+      <screen x="1280" y="-77" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="281" key="GridCell.Tab.0.right/0.23.1280.777/1280.-77.1920.1057@1280.-77.1920.1057" timestamp="1605080202657" />
+    <state x="2063" y="369" key="NewPhpFileDialog" timestamp="1605158331703">
+      <screen x="1280" y="-77" width="1920" height="1057" />
+    </state>
+    <state x="2063" y="369" key="NewPhpFileDialog/0.23.1280.777/1280.-77.1920.1057@1280.-77.1920.1057" timestamp="1605158331703" />
   </component>
 </project>
